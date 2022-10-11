@@ -1,0 +1,105 @@
+
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col">
+      <div class="card-container">
+        <div class="card">
+          <div class="front">
+            <div class="cover">
+              <img src="/assets/images/thumb.jpg"/>
+            </div>
+            <div class="user">
+              <img class="img-circle" src="images/rotating_card_profile.png"/>
+            </div>
+            <div class="content">
+              <div class="main">
+                <h3 class="name">{{firstName}} {{secondName}}</h3>
+                <p class="profession">{{job}}</p>
+
+                <p class="text-center">"{{quote}}"</p>
+              </div>
+              <div class="footer">
+                <div class="rating">
+                  <i class="fa fa-mail-forward"></i> Auto Rotation
+                </div>
+              </div>
+            </div>
+          </div> <!-- end front panel -->
+          <div class="back">
+            <div class="header">
+              <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+            </div>
+            <div class="content">
+              <div class="main">
+                <h4 class="text-center">{{jobDescription}}</h4>
+                <p class="text-center">{{keyWords}}</p>
+
+                <div class="stats-container">
+                  <div class="stats">
+                    <h4>235</h4>
+                    <p>
+                      Followers
+                    </p>
+                  </div>
+                  <div class="stats">
+                    <h4>114</h4>
+                    <p>
+                      Following
+                    </p>
+                  </div>
+                  <div class="stats">
+                    <h4>35</h4>
+                    <p>
+                      Projects
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="footer">
+              <div class="social-links text-center">
+                <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+              </div>
+            </div>
+          </div> <!-- end back panel -->
+        </div> <!-- end card -->
+      </div>
+    </div>
+    <div class="col-7">
+      <div>
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" [(ngModel)]="firstName" class="form-control" >
+        </div>
+        <div class="form-group">
+          <label>Second Name</label>
+          <input type="text" [(ngModel)]="secondName" class="form-control" >
+        </div>
+        <div class="form-group">
+          <label>Job</label>
+          <input type="text" [(ngModel)]="job" class="form-control" >
+        </div>
+        <div class="form-group">
+          <label>Image</label>
+          <input type="text" [(ngModel)]="image" class="form-control" >
+        </div>
+        <div class="form-group">
+          <label>Favorite Quote</label>
+          <input type="text" [(ngModel)]="quote" class="form-control" >
+        </div>
+        <div class="form-group">
+          <label>Job Description</label>
+          <input type="text" [(ngModel)]="jobDescription" class="form-control" >
+        </div>
+        <div class="form-group">
+          <label>Job KeyWords</label>
+          <input type="text" [(ngModel)]="keyWords" class="form-control" >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

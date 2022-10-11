@@ -1,0 +1,9 @@
+<div class="container mt-4">
+  <div class="w-100 p-5" [style.backgroundColor]="color"></div>
+  <div class="form-group">
+    <label>Color</label>
+    <input type="text" class="form-control" (keyup)="colorChange(newColor.value)" #newColor>
+  </div>
+
+  <button type="submit" class="btn btn-primary mt-2" (click)="defaultColor()">Default Color</button>
+</div>
