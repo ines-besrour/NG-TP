@@ -3,11 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BgColorComponent } from './bg-color/bg-color.component';
-import { CarteVisiteComponent } from './carte-visite/carte-visite.component';
+import { BgColorComponent } from './part1/bg-color/bg-color.component';
+import { CarteVisiteComponent } from './part2/carte-visite/carte-visite.component';
 import {FormsModule} from "@angular/forms";
-import { FilsComponent } from './fils/fils.component';
-import { PereComponent } from './pere/pere.component';
+import { FilsComponent } from './part3/fils/fils.component';
+import { PereComponent } from './part3/pere/pere.component';
+import { CVComponent } from './part4/cv/cv.component';
+import { ListeComponent } from './part4/liste/liste.component';
+import { DetailComponent } from './part4/detail/detail.component';
+import { ItemComponent } from './part4/item/item.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { PereComponent } from './pere/pere.component';
     BgColorComponent,
     CarteVisiteComponent,
     FilsComponent,
-    PereComponent
+    PereComponent,
+    CVComponent,
+    ListeComponent,
+    DetailComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
