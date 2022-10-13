@@ -10,7 +10,7 @@ export class CarteVisiteComponent implements OnInit {
   firstName : string = "Ines";
   secondName : string = "Achour";
   job: string = "Student";
-  image: string = "";
+  image: string = "insat.jpg";
   quote: string = "No quotes here"
   jobDescription : string = "Exhausting"
   keyWords : string = "No idea"

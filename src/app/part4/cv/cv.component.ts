@@ -12,10 +12,10 @@ export class CVComponent implements OnInit {
   selectedCV : number = -1;
   cvs :Cv[] = [
     new Cv(
-      0, "Achour", "Ines", 22, 11111111, "Student","test"
+      0, "Achour", "Ines", 22, 11111111, "Student","profile1.jpg"
     ),
     new Cv(
-      1, "Mami", "Y", 2, 22222222, "Student2","test2"
+      1, "Mami", "Y", 2, 22222222, "Student2","profile2.jpg"
     ),
   ];
 
