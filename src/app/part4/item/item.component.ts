@@ -1,4 +1,5 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Cv} from "../model/cv";
 
 @Component({
   selector: 'app-item',
@@ -8,13 +9,14 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 export class ItemComponent implements OnInit {
 
   @Output() itemClick = new EventEmitter()
+  @Input() cv! : Cv;
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onClick(){
-    this.itemClick.emit()
+  onClick(id: number){
+    this.itemClick.emit(id)
   }
 
 }

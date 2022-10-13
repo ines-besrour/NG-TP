@@ -1,9 +1,9 @@
 
-<div class="card" (click)="onClick()">
+<div class="card" (click)="onClick(cv.id)">
   <div class="card-body">
     <div class="row align-items-center">
       <img class="col-2" src="assets/images/profile.png">
-      <div class="col align-middle">Ines Achour</div>
+      <div class="col align-middle">{{ cv.name }} {{cv.firstName}}</div>
     </div>
   </div>
 </div>

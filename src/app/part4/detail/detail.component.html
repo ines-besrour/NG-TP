@@ -9,10 +9,11 @@
       </div>
       <div class="content">
         <div class="main">
-          <h3 class="name">name and firstname</h3>
-          <p class="profession">job</p>
+          <h3 class="name">{{showedCv.name}} {{showedCv.firstName}}</h3>
+          <p class="profession">{{ showedCv.job }}</p>
 
-          <p class="text-center">age</p>
+          <p class="text-center">Age : {{ showedCv.age }}</p>
+          <p class="text-center">CIN : {{ showedCv.cin }}</p>
         </div>
         <div class="footer">
           <div class="rating">
@@ -27,7 +28,7 @@
       </div>
       <div class="content">
         <div class="main">
-          <p class="text-center">cin</p>
+          <p class="text-center">CIN : {{ showedCv.cin }}</p>
 
           <div class="stats-container">
             <div class="stats">

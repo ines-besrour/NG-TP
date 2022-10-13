@@ -1,4 +1,6 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import { Cv } from '../model/cv';
+
 
 @Component({
   selector: 'app-liste',
@@ -8,6 +10,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 export class ListeComponent implements OnInit {
 
   @Output() showCV = new EventEmitter()
+  @Input() cvs : Cv[] = [];
 
   constructor() { }
 
@@ -15,8 +18,8 @@ export class ListeComponent implements OnInit {
   }
 
 
-  cvSelected(){
-    this.showCV.emit();
+  cvSelected(id: number){
+    this.showCV.emit(id);
   }
 
 }
