@@ -9,7 +9,7 @@ import { Cv } from '../model/cv';
 })
 export class ListeComponent implements OnInit {
 
-  @Output() showCV = new EventEmitter()
+  @Output() showCV = new EventEmitter<number>()
   @Input() cvs : Cv[] = [];
 
   constructor() { }

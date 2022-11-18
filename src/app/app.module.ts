@@ -12,6 +12,8 @@ import { CVComponent } from './part4/cv/cv.component';
 import { ListeComponent } from './part4/liste/liste.component';
 import { DetailComponent } from './part4/detail/detail.component';
 import { ItemComponent } from './part4/item/item.component';
+import { DefaultImagePipe } from './part4/pipe/default-image.pipe';
+import { EmbaucheComponent } from './part4/embauche/embauche.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ItemComponent } from './part4/item/item.component';
     CVComponent,
     ListeComponent,
     DetailComponent,
-    ItemComponent
+    ItemComponent,
+    DefaultImagePipe,
+    EmbaucheComponent
   ],
   imports: [
     BrowserModule,

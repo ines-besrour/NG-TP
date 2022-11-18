@@ -1,2 +1,2 @@
-<app-item (itemClick)="cvSelected($event)" [cv]="cvs[0]" ></app-item>
-<app-item (itemClick)="cvSelected($event)" [cv]="cvs[1]" ></app-item>
+<app-item *ngFor="let cv of cvs" (itemClick)="cvSelected($event)" [cv]="cv" ></app-item>
+

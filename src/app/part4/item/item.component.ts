@@ -8,7 +8,7 @@ import {Cv} from "../model/cv";
 })
 export class ItemComponent implements OnInit {
 
-  @Output() itemClick = new EventEmitter()
+  @Output() itemClick = new EventEmitter<number>()
   @Input() cv! : Cv;
   constructor() { }
 
