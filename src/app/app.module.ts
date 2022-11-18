@@ -14,6 +14,7 @@ import { DetailComponent } from './part4/detail/detail.component';
 import { ItemComponent } from './part4/item/item.component';
 import { DefaultImagePipe } from './part4/pipe/default-image.pipe';
 import { EmbaucheComponent } from './part4/embauche/embauche.component';
+import {ToastrModule} from "ngx-toastr";
 
 @NgModule({
   declarations: [
@@ -27,12 +28,13 @@ import { EmbaucheComponent } from './part4/embauche/embauche.component';
     DetailComponent,
     ItemComponent,
     DefaultImagePipe,
-    EmbaucheComponent
+    EmbaucheComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

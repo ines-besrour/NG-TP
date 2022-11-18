@@ -9,9 +9,9 @@ import {Cv} from "../model/cv";
 })
 export class EmbaucheComponent implements OnInit {
 
-  embauched : Cv[]
+  cvEmbauche : Cv[]
   constructor(private embaucheService : EmbaucheService) {
-    this.embauched = embaucheService.getEmbaucheCvs();
+    this.cvEmbauche = embaucheService.getEmbaucheCvs();
   }
 
   ngOnInit(): void {
