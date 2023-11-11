@@ -7,7 +7,7 @@ export class DefaultImagePipe implements PipeTransform {
 
   transform(value: string, ...args: unknown[]): unknown {
     if(value.trim().length == 0){
-      return "profile1.jpg"
+      return "profile.png"
     }
     return value;
   }

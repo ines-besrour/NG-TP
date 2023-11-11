@@ -2,10 +2,10 @@
 
 <div class="container">
   <h2>Cvs Embauchées</h2>
-
+  <p></p>
   <div class="row">
-    <div *ngFor="let cv of cvEmbauche" class="col-md-4">
-      <img class="col-2 align-middle" src="assets/images/{{cv.path | defaultImage}}">
+    <div *ngFor="let cv of cvEmbauche" class="col-md-3">
+      <img class="col-4 align-middle" src="assets/images/{{cv.path | defaultImage}}">
       <div class="col align-middle">{{ cv.name }} {{cv.firstName}}</div>
     </div>
   </div>

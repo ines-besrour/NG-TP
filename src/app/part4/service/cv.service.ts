@@ -8,13 +8,10 @@ export class CvService {
 
   private cvs :Cv[] = [
     new Cv(
-      0, "Achour", "Ines", 22, 11111111, "Student",""
+      0, "besrour", "ines", 22, 14656718, "Student","ines besrour.jpg"
     ),
     new Cv(
-      1, "Sammari", "Amal", 2, 22222222, "Student2","profile2.jpg"
-    ),
-    new Cv(
-      2, "Mami", "Y", 2, 22222222, "Student2","profile2.jpg"
+      1, "kaabachi", "imen", 2, 11111111, "Student",""
     ),
   ];
 
@@ -23,4 +20,5 @@ export class CvService {
   getCvs(): Cv[]{
     return this.cvs;
   }
+
 }

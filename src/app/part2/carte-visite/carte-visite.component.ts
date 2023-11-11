@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class CarteVisiteComponent implements OnInit {
 
   firstName : string = "Ines";
-  secondName : string = "Achour";
+  secondName : string = "Besrour";
   job: string = "Student";
   image: string = "insat.jpg";
-  quote: string = "No quotes here"
-  jobDescription : string = "Exhausting"
-  keyWords : string = "No idea"
+  quote: string = "test"
+  jobDescription : string = "Software engineer"
+  keyWords : string = "python"
 
   constructor() { }
 

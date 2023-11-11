@@ -9,7 +9,7 @@
       </div>
       <div class="content">
         <div class="main">
-          <h3 class="name">{{showedCv.name}} {{showedCv.firstName}}</h3>
+          <h3 class="name">{{showedCv.name|titlecase}} {{showedCv.firstName|titlecase}}</h3>
           <p class="profession">{{ showedCv.job }}</p>
 
           <p class="text-center">Age : {{ showedCv.age }}</p>

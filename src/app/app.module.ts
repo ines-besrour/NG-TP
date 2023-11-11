@@ -15,6 +15,9 @@ import { ItemComponent } from './part4/item/item.component';
 import { DefaultImagePipe } from './part4/pipe/default-image.pipe';
 import { EmbaucheComponent } from './part4/embauche/embauche.component';
 import {ToastrModule} from "ngx-toastr";
+import { HeaderComponent } from './part4/header/header.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CvListComponent } from './part4/cv-list/cv-list.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +32,11 @@ import {ToastrModule} from "ngx-toastr";
     ItemComponent,
     DefaultImagePipe,
     EmbaucheComponent,
+    HeaderComponent,
+    CvListComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
