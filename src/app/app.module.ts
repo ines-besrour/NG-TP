@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpComponent } from './part4/http/http.component';
 import { DetailscvComponent } from './part4/detailscv/detailscv.component';
 import { AuthFormComponent } from './part4/auth-form/auth-form.component';
+import { AutoCompleteComponent } from './part4/auto-complete/auto-complete.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { AuthFormComponent } from './part4/auth-form/auth-form.component';
     HttpComponent,
     DetailscvComponent,
     AuthFormComponent,
+    AutoCompleteComponent,
   ],
   imports: [
     BrowserAnimationsModule,

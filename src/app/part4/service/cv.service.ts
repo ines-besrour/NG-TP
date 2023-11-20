@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Cv} from "../model/cv";
-import { Observable, Subject, map, tap } from "rxjs";
-import { HttpClient } from '@angular/common/http';
+import { Observable, Subject, catchError, map, tap } from "rxjs";
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 export const MES_CONSTANTES = {
   url : 'https://apilb.tridevs.net/api/personnes'
@@ -81,5 +81,19 @@ export class CvService {
     );
   }
 
+  searchCvs(searchTerm: string): Observable<Cv[]> {
+    
+    const filter = {
+      where: {
+        name: {
+          like: `%${searchTerm}%`
+        }
+      }
+    };
+    const urlWithFilter = `${MES_CONSTANTES.url}/?filter=${encodeURIComponent(JSON.stringify(filter))}`;
+
+    return this.http.get<Cv[]>(urlWithFilter);
+
+  }
 }
 

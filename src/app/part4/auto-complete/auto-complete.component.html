@@ -1,0 +1,8 @@
+
+<form [formGroup]="searchForm">
+    <input type="text" formControlName="search" class="form-control" placeholder="Search CVs..." />
+</form>
+  
+  <div *ngFor="let cv of cvs" class="autocomplete-option">
+    {{ cv.name }} {{ cv.firstname }}
+  </div>
