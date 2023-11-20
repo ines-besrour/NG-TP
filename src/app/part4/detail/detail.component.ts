@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Cv} from "../model/cv";
 import {EmbaucheService} from "../service/embauche.service";
+import {CvService} from "../service/cv.service";
 
 @Component({
   selector: 'app-detail',
@@ -9,15 +10,20 @@ import {EmbaucheService} from "../service/embauche.service";
 })
 export class DetailComponent implements OnInit {
 
-  constructor(private embaucheService: EmbaucheService) { }
+  constructor(private embaucheService: EmbaucheService, private cvService: CvService) { }
 
-  @Input() showedCv!: Cv;
+  @Input() showedCv!: Cv ;
 
   ngOnInit(): void {
+    
   }
 
   embaucher(){
     this.embaucheService.addEmbaucheCv(this.showedCv)
+  }
+
+  details(){
+    this.cvService.selectCv(this.showedCv)
   }
 
 }

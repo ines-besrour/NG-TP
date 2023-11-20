@@ -4,7 +4,10 @@
       <app-liste (showCV)="showCV($event)" [cvs]="cvs" ></app-liste>
     </div>
     <div class="col-7">
-      <app-detail *ngIf="selectedCV != -1" [showedCv]="cvs[selectedCV]" ></app-detail>
+      <app-detail *ngIf="selectedCV != null" [showedCv]="cvs[selectedCV.id]" ></app-detail>
     </div>
+  </div>
+  <div class="row">
+    <app-embauche></app-embauche>
   </div>
 </div>

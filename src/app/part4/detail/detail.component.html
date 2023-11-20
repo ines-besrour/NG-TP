@@ -5,11 +5,11 @@
         <img src="assets/images/thumb.jpg"/>
       </div>
       <div class="user">
-        <img class="img-circle" src="assets/images/{{showedCv.path | defaultImage}}"/>
+        <img class="img-circle" src="assets/images/{{showedCv.path| defaultImage}}"/>
       </div>
       <div class="content">
         <div class="main">
-          <h3 class="name">{{showedCv.name|titlecase}} {{showedCv.firstName|titlecase}}</h3>
+          <h3 class="name">{{showedCv.name|titlecase}} {{showedCv.firstname|titlecase}}</h3>
           <p class="profession">{{ showedCv.job }}</p>
 
           <p class="text-center">Age : {{ showedCv.age }}</p>
@@ -54,8 +54,11 @@
         </div>
       </div>
       <div class="footer">
-        <div class="social-links text-center">
+        <div class="col social-links text-center">
           <button class="btn btn-primary" (click)="embaucher()" >Embaucher</button>
+          <button class="btn btn-primary" (click)="details()" >
+            <a class="nav-link" [routerLink]="['/cv', showedCv.id]" >Details</a>
+          </button>
         </div>
       </div>
     </div> <!-- end back panel -->

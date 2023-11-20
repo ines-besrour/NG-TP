@@ -1,4 +1,21 @@
-<app-item 
-    *ngFor="let cv of cvs" (itemClick)="cvSelected($event)" [cv]="cv" >
-</app-item>
+<!-- listcv.component.html -->
+<div>
+    <ul class="nav nav-tabs">
+      <li class="nav-item" (click)="onTabChange('junior')" [class.active]="selectedTab === 'junior'">
+        <a class="nav-link">Juniors</a>
+      </li>
+      <li class="nav-item" (click)="onTabChange('senior')" [class.active]="selectedTab === 'senior'">
+        <a class="nav-link">Seniors</a>
+      </li>
+    </ul>
+  
+    <div *ngIf="selectedTab === 'junior'">
+      <app-item *ngFor="let cv of juniorCvs" (itemClick)="cvSelected(cv)" [cv]="cv"></app-item>
+    </div>
+  
+    <div *ngIf="selectedTab === 'senior'">
+      <app-item *ngFor="let cv of seniorCvs" (itemClick)="cvSelected(cv)" [cv]="cv"></app-item>
+    </div>
+  </div>
+  
 

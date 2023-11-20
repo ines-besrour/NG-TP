@@ -1,0 +1,4 @@
+/* auth-form.component.css */
+.invalid {
+    border: 1px solid red;
+  }

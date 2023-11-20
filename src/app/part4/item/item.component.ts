@@ -8,15 +8,15 @@ import {Cv} from "../model/cv";
 })
 export class ItemComponent implements OnInit {
 
-  @Output() itemClick = new EventEmitter<number>()
-  @Input() cv! : Cv;
+  @Output() itemClick = new EventEmitter<Cv>()
+  @Input() cv!: Cv ;
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onClick(id: number){
-    this.itemClick.emit(id)
+  onClick(cv: Cv){
+    this.itemClick.emit(cv)
   }
 
 }

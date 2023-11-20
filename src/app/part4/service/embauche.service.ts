@@ -18,11 +18,11 @@ export class EmbaucheService {
   addEmbaucheCv(cv : Cv){
     if(this.embauche.includes(cv)){
       //alert("Ce cv est déja embauché")
-      this.toastrService.error("Ce cv est déja embauché",)
+      this.toastrService.error("Ce cv est déja embauché", 'Erreur')
     }
     else{
       this.embauche.push(cv)
-      this.toastrService.success("Cv embauché avec succés")
+      this.toastrService.success("Cv embauché avec succés", 'Succès')
     }
   }
 }

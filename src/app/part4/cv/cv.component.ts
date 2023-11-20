@@ -10,17 +10,17 @@ import {CvService} from "../service/cv.service";
 export class CVComponent implements OnInit {
 
   cvs :Cv[];
-  selectedCV : number = -1;
+  selectedCV! : Cv;
 
   constructor(private cvService : CvService) {
-    this.cvs = cvService.getCvs()
+    this.cvs = cvService.getDefaultCvs()
   }
 
   ngOnInit(): void {
   }
 
-  showCV(id: number){
-    this.selectedCV = id;
+  showCV(cv: Cv){
+    this.selectedCV = cv;
   }
 
 }
